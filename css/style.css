@@ -1,0 +1,50 @@
+body, html {
+	margin: auto;
+}
+
+.holder {
+	background-color: #ccc;
+	width: 500px;
+	height: 500px;
+}
+
+.squareHolder {
+	/*div in the center*/
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	/**/
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+	width: 300px;
+	height: 300px;
+}
+
+.square {
+	display: inline-block;
+	padding: 1px;
+	width: 50px;
+	height: 50px;
+}
+
+/* Color classes for click event*/
+.colorBlue {
+	background: #0000ff;
+}
+
+.colorBlack {
+	background: #000000;
+}
+
+.colorRed {
+	background: #ff0000;
+}
+
+.colorGreen {
+	background: #00ff00;
+}
+
+.colorWhite {
+	background: #ffffff;
+}
