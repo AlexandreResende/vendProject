@@ -1,15 +1,31 @@
 $(document).ready( () => {
 
 	$('.colorBlack').click( function() {
-		console.log(this);
-		$(this).toggleClass('colorGreen');
-		$(this).toggleClass('colorBlack');
+
+		let value = $(this).attr('value');
+
+		if (value === '0'){
+			$(this).toggleClass('colorGreen');
+			$(this).toggleClass('colorBlack');
+			$(this).attr('value', '1');
+		} else {
+			alert('Color already changed!');
+		}
+		
 	});
 
 	$('.colorWhite').click( function() {
-		console.log(this);
-		$(this).toggleClass('colorRed');
-		$(this).toggleClass('colorWhite');
+
+		let value = $(this).attr('value');
+		
+		if (value === '0'){
+			$(this).toggleClass('colorRed');
+			$(this).toggleClass('colorWhite');
+			$(this).attr('value', '1');
+		} else {
+			alert('Color already changed!');
+		}
+		
 	});
 
 });
