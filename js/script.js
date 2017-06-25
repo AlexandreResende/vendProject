@@ -1,5 +1,7 @@
 $(document).ready( () => {
 
+	getQuote();
+
 	$('.colorBlack').click( function() {
 
 		let value = $(this).attr('value');
@@ -17,7 +19,7 @@ $(document).ready( () => {
 	$('.colorWhite').click( function() {
 
 		let value = $(this).attr('value');
-		
+
 		if (value === '0'){
 			$(this).toggleClass('colorRed');
 			$(this).toggleClass('colorWhite');
