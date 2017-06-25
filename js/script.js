@@ -2,6 +2,16 @@ $(document).ready( () => {
 
 	getQuote();
 
+	$('.squareSection').on('mouseover', function(){
+
+		let redColor = Math.round(Math.random() * 255);
+		let blueColor =  Math.round(Math.random() * 255);
+		let greenColor =  Math.round(Math.random() * 255);
+
+		$(this).css('background', 'rgb(' + redColor + ',' + greenColor + ',' + blueColor + ')');
+
+	});
+
 	$('.colorBlack').click( function() {
 
 		let value = $(this).attr('value');
@@ -31,11 +41,3 @@ $(document).ready( () => {
 	});
 
 });
-
-//check value of the div before toggling class
-
-//insert a for lopp to dinamically insert the divs and its
-//corresponding colors
-
-//function generate divs
-//function insertClasses(index)

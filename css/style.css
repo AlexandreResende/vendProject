@@ -50,12 +50,17 @@ body, html {
 }
 
 /* SQUARES SECTION*/
+.squareSection {
+	border: 2px solid #000000;
+}
+
 .holder {
 	background-color: #ccc;
 	width: 500px;
 	height: 500px;
 	margin-left: auto;
 	margin-right: auto;
+	border: 2px solid #000000;
 }
 
 .squareHolder {
