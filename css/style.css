@@ -60,7 +60,6 @@ body, html {
 	height: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	border: 2px solid #000000;
 }
 
 .squareHolder {
@@ -118,30 +117,54 @@ body, html {
 }
 
 /* MEDIA QUERIES*/
-@media(min-width:601px) and (max-width:960px){
-	
+/*Tablet layout*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.aboutSection {
+	height: 350px;
+	}
+
+	.aboutSection .description {
+	height: 300px;
+	}
+
+	.aboutSection p {
+	font-size: 3em;
+	}
+
+	.holder { /*grey area*/
+	width: 600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+	.squareHolder {
+		/*div in the center*/
+		position: relative;
+		padding: 1em;
+		width: 450px;
+		height: 450px;
+	}
+
+	.square {
+		width: 80px;
+		height: 80px;
+	}
+
+	.footerSection {
+		height: 100px;
+		font-size: 2.5em;
+		line-height: 100px;
+	}
 
 }
 
-@media(max-width:600px){
-	
+/* Mobile Layout */
+@media only screen and (max-width: 767px) {
 
 }
 
-@media(max-width:768px){
-	h1 {
-		font-size: 35px !important;
-		text-align: center !important;
-	}
+/* Layout largo de mobile */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-	h2 {
-		font-size: 25px !important;
-		text-align: center !important;
-		display: block !important;
-		line-height: 1.5em !important;
-	}
-
-	.content-icons i {
-		margin-top: 20px !important;
-	}
 }
