@@ -20,6 +20,34 @@ body, html {
 	color: #ffffff;
 }
 
+/* ABOUT SECTION*/
+.aboutSection {
+	background-image: url('../img/aboutImg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+}
+
+.aboutSection img {
+	margin: 50px auto;
+	width: 150px;
+	height: 150px;
+	border: 1px solid #000000;
+	border-radius: 30%;
+}
+
+.aboutSection .description {
+	margin: 50px auto;
+	background: rgba(255,255,255, 0.5);
+	height: 200px;
+}
+
+.aboutSection p {
+	margin: 50px auto;
+	color: #000000;
+	font-size: 2em;
+}
+
 /* SQUARES SECTION*/
 .holder {
 	background-color: #ccc;
