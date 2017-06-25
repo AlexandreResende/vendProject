@@ -3,25 +3,28 @@ body, html {
 	margin-right: auto;
 }
 
-.holder {
-	background-color: #ccc;
-	width: 500px;
-	height: 500px;
+/* QUOTE SECTION*/
+.quoteSection {
+	background: #406c96;
+	border-bottom: 2px solid #000000;
 }
 
 .randomQuote {
 	margin-top: 50px;
 	background: #406c96;
-	width: 100vw;
-	left: -100px;
-	overflow: hidden;
 	height: 100px;
-	border-bottom: 2px solid #000000;
 }
 
 .quote {
 	text-align: center;
 	color: #ffffff;
+}
+
+/* SQUARES SECTION*/
+.holder {
+	background-color: #ccc;
+	width: 500px;
+	height: 500px;
 }
 
 .squareHolder {
@@ -52,11 +55,16 @@ body, html {
 	height: 50px;
 }
 
-/* Color classes for click event*/
-.colorBlue {
-	background: #0000ff;
+/*FOOTER SECTION*/
+.footerSection {
+	background: #406c96;
+	color: white;
+	height: 30px;
+	text-align: center;
+	overflow: hidden;
 }
 
+/* COLOR CLASSES FOR CLICK EVENT*/
 .colorBlack {
 	background: #000000;
 }
@@ -71,4 +79,33 @@ body, html {
 
 .colorWhite {
 	background: #ffffff;
+}
+
+/* MEDIA QUERIES*/
+@media(min-width:601px) and (max-width:960px){
+	
+
+}
+
+@media(max-width:600px){
+	
+
+}
+
+@media(max-width:768px){
+	h1 {
+		font-size: 35px !important;
+		text-align: center !important;
+	}
+
+	h2 {
+		font-size: 25px !important;
+		text-align: center !important;
+		display: block !important;
+		line-height: 1.5em !important;
+	}
+
+	.content-icons i {
+		margin-top: 20px !important;
+	}
 }
