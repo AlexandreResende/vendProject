@@ -1,5 +1,6 @@
 $(document).ready( () => {
 
+	//calling getQuote function on document load
 	getQuote();
 
 	$('.squareSection').on('mouseover', function(){
@@ -8,7 +9,7 @@ $(document).ready( () => {
 		let blueColor =  Math.round(Math.random() * 255);
 		let greenColor =  Math.round(Math.random() * 255);
 
-		$(this).css('background', 'rgb(' + redColor + ',' + greenColor + ',' + blueColor + ')');
+		$('body').css('background', 'rgb(' + redColor + ',' + greenColor + ',' + blueColor + ')');
 
 	});
 
