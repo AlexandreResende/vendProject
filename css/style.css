@@ -1,6 +1,6 @@
 body, html {
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0;
+	padding: 0;
 }
 
 /* QUOTE SECTION*/
@@ -18,6 +18,7 @@ body, html {
 .quote {
 	text-align: center;
 	color: #ffffff;
+	line-height: 30px;
 }
 
 /* ABOUT SECTION*/
@@ -33,7 +34,6 @@ body, html {
 	width: 150px;
 	height: 200px;
 	border: 1px solid #000000;
-	border-radius: 30%;
 }
 
 .aboutSection .description {
@@ -90,13 +90,19 @@ body, html {
 	height: 50px;
 }
 
+.squareHolder div:hover {
+	cursor: pointer;
+}
+
 /*FOOTER SECTION*/
 .footerSection {
 	background: #406c96;
 	color: white;
-	height: 30px;
+	height: 100px;
+	font-size: 1.5em;
+	line-height: 100px;
 	text-align: center;
-	overflow: hidden;
+	
 }
 
 /* COLOR CLASSES FOR CLICK EVENT*/
@@ -117,29 +123,29 @@ body, html {
 }
 
 /* MEDIA QUERIES*/
+
 /*Tablet layout*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.aboutSection {
-	height: 350px;
+		height: 350px;
 	}
 
 	.aboutSection .description {
-	height: 300px;
+		height: 300px;
 	}
 
 	.aboutSection p {
-	font-size: 3em;
+		font-size: 3em;
 	}
 
-	.holder { /*grey area*/
-	width: 600px;
-	height: 600px;
-	margin-left: auto;
-	margin-right: auto;
+	.holder { 
+		width: 600px;
+		height: 600px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.squareHolder {
-		/*div in the center*/
 		position: relative;
 		padding: 1em;
 		width: 450px;
@@ -152,19 +158,48 @@ body, html {
 	}
 
 	.footerSection {
-		height: 100px;
 		font-size: 2.5em;
-		line-height: 100px;
 	}
 
 }
 
-/* Mobile Layout */
-@media only screen and (max-width: 767px) {
+
+/*
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.aboutSection {
+		height: 350px;
+	}
+
+	.aboutSection .description {
+		height: 300px;
+	}
+
+	.aboutSection p {
+		font-size: 3em;
+	}
+
+	.holder { 
+		width: 600px;
+		height: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.squareHolder {
+		position: relative;
+		padding: 1em;
+		width: 450px;
+		height: 450px;
+	}
+
+	.square {
+		width: 80px;
+		height: 80px;
+	}
+
+	.footerSection {
+		font-size: 2.5em;
+	}
 
 }
-
-/* Layout largo de mobile */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
-}
+*/

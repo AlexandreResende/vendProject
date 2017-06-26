@@ -21,7 +21,7 @@ $(document).ready( () => {
 			$(this).toggleClass('colorBlack');
 			$(this).attr('value', '1');
 		} else {
-			alert('Color already changed!');
+			alert('Já está verde!');
 		}
 		
 	});
@@ -35,7 +35,7 @@ $(document).ready( () => {
 			$(this).toggleClass('colorWhite');
 			$(this).attr('value', '1');
 		} else {
-			alert('Color already changed!');
+			alert('Já está vermelho!');
 		}
 		
 	});
