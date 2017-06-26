@@ -50,10 +50,6 @@ body, html {
 }
 
 /* SQUARES SECTION*/
-.squareSection {
-	border: 2px solid #000000;
-}
-
 .holder {
 	background-color: #ccc;
 	width: 500px;
@@ -138,6 +134,10 @@ body, html {
 		font-size: 3em;
 	}
 
+	.squareSection {
+		margin-top: 50%;
+	}
+
 	.holder { 
 		width: 600px;
 		height: 600px;
@@ -159,10 +159,14 @@ body, html {
 
 	.footerSection {
 		font-size: 2.5em;
+		bottom:0px;
+	    left:0px;
+	    right:0px;
+	    margin-bottom:0px;
+	    position: fixed;
 	}
 
 }
-
 
 /*
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -199,6 +203,11 @@ body, html {
 
 	.footerSection {
 		font-size: 2.5em;
+		bottom:0px;
+	    left:0px;
+	    right:0px;
+	    margin-bottom:0px;
+	    position: fixed;
 	}
 
 }
